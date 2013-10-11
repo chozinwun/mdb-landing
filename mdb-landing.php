@@ -10,7 +10,7 @@
 	function redirect_to_home() {
 
 		if( is_home() && !isset($_REQUEST['show_home']) ) {
-			wp_redirect('theplatform');
+			wp_redirect( get_site_url(1) . '/theplatform' );
 		}
 	}
 
